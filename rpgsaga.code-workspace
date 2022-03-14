@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"name": "Configs (Root)",
+			"path": "."
+		},
+		{
+			"name": "Saga",
+			"path": "saga"
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/node_modules": true,
+			"**/build": true,
+			"**/dist": true
+		},
+		"editor.detectIndentation": false,
+		"editor.tabSize": 4,
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+        
+            {
+                "type": "pwa-node",
+                "request": "launch",
+                "name": "Launch Program",
+                "skipFiles": [
+                    "<node_internals>/**"
+                ],
+                "program": "rpgsaga\\saga\\src\\index.ts",
+                "__workspaceFolder": "rpgsaga\\saga\\src",
+                "outFiles": [
+                    "${workspaceFolder}/**/*.js"
+                ]
+            }
+        ]
+    }
+}
